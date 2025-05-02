@@ -16,8 +16,11 @@
   </head>
   <body>
     <div class="wrapper-div">
-      <div class="back-effect-div"></div>
-      <img src="./assets/mypic-2.png" alt="picture" id="pro-pic" />
+      <div class="image-container">
+        <div class="back-effect-div">
+          <img src="./assets/mypic-2.png" alt="picture" id="pro-pic" />
+      </div>
+      </div>
       <div class="experience-div card">
         <div class="val-div">1<span>+</span></div>
         <div class="text-div">YEARS OF <span>EXPERIENCE</span></div>
@@ -26,19 +29,23 @@
         <div class="val-div">10<span>+</span></div>
         <div class="text-div">COMPLETED <span>PROJECTS</span></div>
       </div>
-      <nav>
-        <div class="logo-div">PortFolio</div>
+      <div class="nav">
+        <div class="logo-div"><a href="#hero">PortFolio</a></div>
         <div class="icons-div">
           <p id="theme-switcher" style="cursor: pointer">Mode</p>
-          <p id="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
+          <div class="menu-div">
+            <p id="menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+            <p><a id="project-link" href="#project-sec">Projects</a></p>
+            <p><a id="contact-link" href="#contact-sec">Contact</a></p>
+          </div>
         </div>
-      </nav>
+      </div>
       <main>
-        <div class="hero-section">
+        <div class="hero-section" id="hero">
           <div class="hero">
             <div class="name-div">
               <span id="salutation-text">HELLO,<span> MY NAME IS</span></span>
@@ -177,7 +184,7 @@
       </div>
     </div>
     <section>
-      <div class="projects-section">
+      <div class="projects-section" id="project-sec">
         <div class="skill-heading-div">PROJECTS</div>
         <div class="projects-container">
           <div class="project-box">
@@ -243,26 +250,26 @@
         </div>
       </div>
     </section>
-    <section class="contact-me">
+    <section class="contact-me" id="contact-sec">
       <div class="skill-heading-div">CONTACT ME</div>
       <div class="contact-container">
         <div class="info-div">
           <div class="contact-icons-div">
             <div class="arrow-circle cont">
               <div>
-                <i class="fa-solid fa-home icon">H</i>
+                <i class="fa-solid fa-home icon"></i>
               </div>
               <hr />
             </div>
             <div class="arrow-circle cont">
               <div>
-                <i class="fa-solid fa-gmail icon">G</i>
+                <i class="fa-solid fa-email icon"></i>
               </div>
               <hr />
             </div>
             <div class="arrow-circle cont">
               <div>
-                <i class="fa-solid fa-phone icon">P</i>
+                <i class="fa-solid fa-phone icon"></i>
               </div>
               <hr />
             </div>
