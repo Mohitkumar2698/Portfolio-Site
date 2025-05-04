@@ -207,9 +207,10 @@ body {
   width: 40vw;
 }
 .links-div {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 1.5rem;
   display: flex;
+  justify-content: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: underline;
@@ -221,6 +222,7 @@ body {
 .button-div {
   margin-top: 2.5rem;
   display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 .button-div button {
@@ -391,7 +393,7 @@ body {
 }
 .projects-container {
   margin-top: 10vh;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
   justify-content: space-evenly;
   display: grid;
   grid-template-columns: repeat(3, 32%);
@@ -436,14 +438,15 @@ body {
   color: var(--light-font);
 }
 .project-box button {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
   color: var(--accent);
   background-color: transparent;
   align-self: flex-start;
   cursor: pointer;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 8.5rem;
   border: 1px solid var(--light-border);
   border-radius: 25px;
   box-shadow: 5px 5px var(--light-mode-shadow);
@@ -504,7 +507,7 @@ body {
   font-size: 15px;
   line-height: 1.7;
   font-weight: 400;
-  color: var(--light-font);
+  color: #eaeaea;
 }
 
 .inputs {
@@ -609,6 +612,7 @@ footer span {
     align-items: center;
     height: 7vh;
     width: 100vw;
+    background-color: var(--project-light-background);
   }
   .nav .logo-div a {
     font-size: 1.4rem;
@@ -643,19 +647,22 @@ footer span {
   .back-effect-div {
     height: 300px;
     width: 300px;
-    top: 31vh;
-    left: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    align-self: center;
     /* display: none; */
   }
   #pro-pic {
     height: 350px;
+    align-self: center;
     left: 20px;
     /* display: none; */
   }
   .card {
-    font-size: 20px;
+    font-size: 22px;
     gap: 3px;
-    padding: 0px 10px;
+    padding: 5px 15px;
     font-weight: 400;
     height: 50px;
     width: fit-content;
@@ -666,18 +673,20 @@ footer span {
   }
   .experience-div {
     top: 55vh;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-140%);
   }
   .projects-div {
-    top: 58vh;
-    left: 250px;
+    top: 57vh;
+    left: 50%;
+    transform: translateX(20%);
   }
   .button-div {
-    margin-top: 2rem;
-    gap: 10px;
+    margin-top: 1.5rem;
+    gap: 40px;
   }
   .button-div button {
-    border-width: 0.5px;
+    border-width: 1px;
   }
 
   /* skills Section */
@@ -686,11 +695,11 @@ footer span {
     height: auto;
   }
   .skill-heading-div {
-    font-size: 24px;
+    font-size: 26px;
   }
   .skill-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 5vh;
     padding: 0rem 1.5rem;
     gap: 1rem;
@@ -700,11 +709,80 @@ footer span {
     gap: 1rem;
     padding: 1rem 1rem;
   }
-.skill-desc {
-  font-size: 14px;
-}
-.arrow-circle {
-  margin-top: 0rem;
-}
+  .skill-desc {
+    font-size: 14px;
+  }
+  .arrow-circle {
+    margin-top: 0rem;
+  }
+  /* Project Section */
+  .projects-section {
+    padding-top: 5vh;
+    height: auto;
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+    margin-top: 7vh;
+  }
 
+  .project-box button {
+    padding: 0.7rem 6.2rem;
+  }
+  /* contact Section */
+  .contact-me {
+    padding-top: 10vh;
+    height: auto;
+  }
+  .contact-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-div b {
+    font-size: 30px;
+  }
+  .contact-info-div p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  .cont {
+    margin-bottom: 3rem;
+  }
+  .cont div {
+    height: 36px;
+    width: 36px;
+  }
+  .cont hr {
+    width: 1.5rem;
+  }
+  .contact-container {
+    gap: 1.5rem;
+  }
+  .form-div form {
+    width: 100%;
+    gap: 1rem;
+  }
+  .name-email {
+    flex-direction: column;
+  }
+  .inputs {
+    border-width: 1px;
+  }
+  .input-lable label {
+    font-size: 12px;
+  }
+  .subject-msg .input-lable:nth-child(even) {
+    margin-top: 1rem;
+  }
+  .term-btn {
+    font-size: 14px;
+  }
+  .term-btn input {
+    padding: 0.5rem 0.8rem;
+  }
+  /* footer */
+  footer p {
+    font-size: 14px;
+  }
 }

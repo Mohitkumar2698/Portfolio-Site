@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+:root {
+  --background-color: #2a5c82;
+  --text-color: #4a5568;
+}
+.navbar-div {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  background-color: var(--background-color);
+  color: white;
+  padding: 0rem 5rem;
+  font-family: Ubuntu, sans-serif;
+}
+.body-div {
+  height: max-content;
+  padding: 2rem 15rem;
+  background-color: aliceblue;
+}
+form {
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  background-color: #69a9e1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border: 1px solid black;
+}
+form .main-heading {
+  font-size: 2.5rem;
+  font-family: Ubuntu, sans-serif;
+  margin-left: 15vw;
+  color: var(--background-color);
+}
+.inputs {
+  height: 6vh;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: none;
+}
+.big-info-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-size: 1.3rem;
+  padding: 1rem;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+.big-info-div fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+.big-info-div .inputs {
+  width: 25vw;
+  /* padding: 1rem; */
+}
+
+#skill-btn {
+  font-size: 1.7rem;
+  padding: 0.3rem;
+  background-color: var(--background-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.submit-div {
+  margin-top: 1rem;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons {
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 20vw;
+  background-color: var(--background-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* result Page */
+.result-div {
+  padding: 0rem 6rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.resume-div {
+  padding: 1rem;
+  border: 1rem solid var(--background-color);
+  background-color: white;
+}
+
+.upper-section-div {
+  display: flex;
+  gap: 1rem;
+}
+.photo-div {
+  padding-left: 1rem;
+}
+#image-val {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+form {
+  overflow: hidden;
+}
+.name-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: serif;
+}
+.middle-section-div {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  /* margin-left: 0.7rem; */
+}
+.left-section-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* margin-left: 1rem; */
+}
+.left-middle-div {
+  display: flex;
+  gap: 1rem;
+}
+.left-headings .heading {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.left-values .values {
+  color: rgba(0, 0, 0, 0.589);
+  font-size: 0.8rem;
+  margin-top: 0.45rem;
+}
+
+.left-lower-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.heading-div {
+  letter-spacing: 3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.education-div .values {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.589);
+  margin-top: 0.2rem;
+}
+.desc-div .heading {
+  font-size: 0.8rem;
+}
+.reffrence-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.reffrence-div .values {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.589);
+  margin-top: 0.2rem;
+}
+.middle-mid-section-div {
+  width: 5px;
+  background-color: var(--background-color);
+}
+.right-section-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin-right: 1rem; */
+}
+.right-divs .right-head {
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.right-divs .right-desc {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.589);
+}
