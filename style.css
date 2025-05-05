@@ -663,14 +663,14 @@ footer span {
     text-align: center;
     width: 90vw;
     padding: 0rem 1rem;
-    margin-top: 38vh;
+    margin-top: 32vh;
     font-size: 0.7rem;
     align-self: center;
   }
   .back-effect-div {
     height: 230px;
     width: 230px;
-    top: 28vh;
+    top: 23vh;
     left: 50%;
     transform: translateX(-50%);
     align-self: center;
@@ -695,12 +695,12 @@ footer span {
     font-size: 8px;
   }
   .experience-div {
-    top: 55vh;
+    top: 42vh;
     left: 50%;
     transform: translateX(-140%);
   }
   .projects-div {
-    top: 57vh;
+    top: 45vh;
     left: 50%;
     transform: translateX(20%);
   }
@@ -712,13 +712,14 @@ footer span {
   }
   .button-div {
     margin-top: 0.8rem;
-    gap: 40px;
-    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
   }
   .button-div button {
     border-width: 1px;
     font-size: 10px;
-    width: 140px;
+    width: 350px;
     height: 45px;
   }
 
