@@ -615,7 +615,7 @@ footer span {
 }
 
 /* Ai  1200px*/
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   html {
     font-size: 1.3rem;
   }
@@ -665,7 +665,7 @@ footer span {
     width: 300px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -63%);
     align-self: center;
     /* display: none; */
   }
@@ -753,16 +753,20 @@ footer span {
   /* contact Section */
   .contact-me {
     padding-top: 10vh;
-    padding-bottom: 7vh;
-  }
+    height: max-content;
+    padding-bottom: 5vh;
+  } 
   .contact-container {
     flex-wrap: wrap;
+  }
+  .contact-icons-div{
+    gap: 2.7rem;
   }
   .contact-info-div b {
     font-size: 30px;
   }
   .contact-info-div p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 30px;
   }
   .cont div {
@@ -800,7 +804,7 @@ footer span {
   }
 }
 /* Ai  700px*/
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 501px) and (max-width: 1024px) {
   html {
     font-size: 1.3rem;
   }
