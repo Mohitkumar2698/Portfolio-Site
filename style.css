@@ -770,7 +770,7 @@ footer span {
     gap: 0.5rem;
   }
   .project-box img {
-    height: 150px;
+    height: 170px;
   }
   .project-box span {
     font-size: 14px;
@@ -782,7 +782,7 @@ footer span {
     font-size: 15px;
   }
   .project-box button {
-    padding: 0.4rem 4.5rem;
+    padding: 0.4rem 5.4rem;
   }
   /* contact Section */
   .contact-me {
