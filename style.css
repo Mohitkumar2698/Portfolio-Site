@@ -615,7 +615,7 @@ footer span {
 }
 
 /* Ai  1200px*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   html {
     font-size: 1.3rem;
   }
@@ -800,7 +800,7 @@ footer span {
   }
 }
 /* Ai  700px*/
-@media screen and (min-width: 501px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   html {
     font-size: 1.3rem;
   }
