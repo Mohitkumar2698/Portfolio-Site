@@ -154,7 +154,7 @@ body {
 .wrapper-div {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .hero-section {
   background-image: var(--light-background);
@@ -210,7 +210,6 @@ body {
   font-size: 30px;
   margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-decoration: underline;
@@ -222,11 +221,9 @@ body {
 .button-div {
   margin-top: 2.5rem;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .button-div button {
-  /* padding: 0 40px; */
   width: 180px;
   font-size: 13px;
   color: var(--light-font);
@@ -325,8 +322,11 @@ body {
   display: grid;
   gap: 3rem 2rem;
   justify-content: center;
-  grid-template-columns: repeat(3, 29vw);
-  grid-template-rows: repeat(auto, 30vh);
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  width: 410px;
 }
 .skill-upper {
   display: flex;
@@ -395,11 +395,11 @@ body {
   margin-top: 10vh;
   row-gap: 1.5rem;
   justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: repeat(3, 32%);
-  grid-template-rows: repeat(auto, auto);
+  display: flex;
+  flex-wrap: wrap;
 }
 .project-box {
+  width: 430px;
   background-color: var(--project-box-light-background);
   align-items: center;
   display: flex;
@@ -446,7 +446,7 @@ body {
   background-color: transparent;
   align-self: flex-start;
   cursor: pointer;
-  padding: 0.5rem 8.5rem;
+  padding: 0.5rem 8.3rem;
   border: 1px solid var(--light-border);
   border-radius: 25px;
   box-shadow: 5px 5px var(--light-mode-shadow);
@@ -467,17 +467,24 @@ body {
 }
 .contact-container {
   display: flex;
-  gap: 10rem;
-  padding: 7vh 5vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 8vh;
   align-items: center;
 }
 .info-div {
+  width: max-content;
   display: flex;
+  gap: 3rem;
+}
+.contact-icons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   gap: 2rem;
-  align-items: baseline;
 }
 .cont {
-  margin-bottom: 4rem;
+  margin: 0;
 }
 .cont div {
   height: 56px;
@@ -494,6 +501,12 @@ body {
   width: 2.5rem;
   opacity: 1;
 }
+.contact-icons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3.4rem;
+}
 .contact-info-div b {
   font-size: 33px;
   font-family: serif;
@@ -503,13 +516,22 @@ body {
 
 .contact-info-div p {
   margin-bottom: 54px;
-  margin-top: 0.5rem;
   font-size: 15px;
   line-height: 1.7;
   font-weight: 400;
-  color: #eaeaea;
+  opacity: 0.8;
 }
 
+.form-div form {
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-left: 1rem;
+  /* margin-top: 1.4rem; */
+  font-weight: 400;
+  width: fit-content;
+}
 .inputs {
   padding: 0 20px;
   height: 60px;
@@ -520,17 +542,6 @@ body {
   border: 2px solid var(--light-border);
   border-radius: 30px;
   margin-top: 10rem;
-  width: 100%;
-}
-.form-div form {
-  width: 85%;
-  display: flex;
-  height: max-content;
-  flex-direction: column;
-  gap: 1.8rem;
-  padding-left: 1rem;
-  /* margin-top: 1.4rem; */
-  font-weight: 400;
 }
 form span {
   color: var(--accent);
@@ -539,6 +550,10 @@ form span {
 .name-email {
   display: flex;
   gap: 1rem;
+}
+.input-lable {
+  display: flex;
+  flex-direction: column;
 }
 .input-lable label {
   margin-left: 25px;
@@ -626,7 +641,7 @@ footer span {
   /* hero */
   .hero-section {
     padding: 5vh 0rem;
-    height: fit-content;
+    height: auto;
   }
   .hero-section .name-div {
     align-items: center;
@@ -643,6 +658,190 @@ footer span {
     padding: 0rem 1rem;
     margin-top: 41vh;
     font-size: 0.9rem;
+    align-self: center;
+  }
+  .back-effect-div {
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    align-self: center;
+    /* display: none; */
+  }
+  #pro-pic {
+    height: 350px;
+    align-self: center;
+    left: 20px;
+    /* display: none; */
+  }
+  .card {
+    font-size: 22px;
+    gap: 3px;
+    padding: 5px 15px;
+    font-weight: 400;
+    height: 50px;
+    width: fit-content;
+    border-width: 0.5px;
+  }
+  .card .text-div {
+    font-size: 10px;
+  }
+  .experience-div {
+    top: 55vh;
+    left: 50%;
+    transform: translateX(-140%);
+  }
+  .projects-div {
+    top: 57vh;
+    left: 50%;
+    transform: translateX(20%);
+  }
+  .links-div {
+    justify-content: center;
+  }
+  .button-div {
+    margin-top: 1.5rem;
+    gap: 40px;
+    justify-content: center;
+  }
+  .button-div button {
+    border-width: 1px;
+  }
+
+  /* skills Section */
+  .skills-sec {
+    padding: 3vh 0;
+    height: auto;
+  }
+  .skill-heading-div {
+    font-size: 26px;
+  }
+  .skill-container {
+    margin-top: 5vh;
+    padding: 0rem 1.5rem;
+    gap: 1rem;
+  }
+  .skill-upper {
+    font-size: 16px;
+    gap: 1rem;
+    padding: 1rem 1rem;
+  }
+  .skill-desc {
+    font-size: 14px;
+  }
+  .arrow-circle {
+    margin-top: 0rem;
+  }
+  /* Project Section */
+  .projects-section {
+    padding-top: 5vh;
+    height: auto;
+  }
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 1rem;
+    margin-top: 7vh;
+  }
+  .project-box {
+    width: 470px;
+  }
+  .project-box button {
+    padding: 0.7rem 6.2rem;
+  }
+  /* contact Section */
+  .contact-me {
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+  }
+  .contact-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-div b {
+    font-size: 30px;
+  }
+  .contact-info-div p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .cont div {
+    height: 36px;
+    width: 36px;
+  }
+  .cont hr {
+    width: 1.5rem;
+  }
+  .form-div form {
+    width: 100%;
+    gap: 1rem;
+  }
+  .name-email {
+    flex-direction: column;
+  }
+  .inputs {
+    border-width: 1px;
+  }
+  .input-lable label {
+    font-size: 12px;
+  }
+  .subject-msg .input-lable:nth-child(even) {
+    margin-top: 1rem;
+  }
+  .term-btn {
+    font-size: 14px;
+  }
+  .term-btn input {
+    padding: 0.5rem 0.8rem;
+  }
+  /* footer */
+  footer p {
+    font-size: 14px;
+  }
+}
+/* Ai  700px*/
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+  html {
+    font-size: 1.3rem;
+  }
+  body {
+    width: 100vw;
+  }
+  .nav {
+    padding: 0rem 1rem;
+    align-items: center;
+    height: 7vh;
+    width: 100vw;
+    background-color: var(--project-light-background);
+  }
+  .nav .logo-div a {
+    font-size: 1.4rem;
+  }
+  .nav .icons-div {
+    gap: 1.5rem;
+  }
+  .nav .icons-div p span {
+    width: 1.5rem;
+  }
+  /* hero */
+  .hero-section {
+    padding: 5vh 2rem;
+    height: auto;
+  }
+  .hero-section .name-div {
+    align-items: center;
+  }
+  .hero-section .name-div #name-text {
+    font-size: 2.2rem;
+  }
+  .hero-section .name-div #role-text span {
+    font-size: 1.3rem;
+  }
+  .hero-section .desc-div {
+    text-align: center;
+    margin-top: 41vh;
+    font-size: 0.9rem;
+    width: 100%;
   }
   .back-effect-div {
     height: 300px;
@@ -684,11 +883,15 @@ footer span {
   .button-div {
     margin-top: 1.5rem;
     gap: 40px;
+    justify-content: center;
   }
   .button-div button {
     border-width: 1px;
+    width: 250px;
   }
-
+  .links-div {
+    justify-content: center;
+  }
   /* skills Section */
   .skills-sec {
     padding: 3vh 0;
@@ -733,18 +936,16 @@ footer span {
   /* contact Section */
   .contact-me {
     padding-top: 10vh;
-    height: auto;
+    height: max-content;
+    padding-bottom: 5vh;
   }
-  .contact-container {
-    flex-wrap: wrap;
-  }
+
   .contact-info-div b {
     font-size: 30px;
   }
   .contact-info-div p {
     font-size: 18px;
     margin-bottom: 30px;
-    opacity: 0.8;
   }
   .cont {
     margin-bottom: 3rem;
@@ -756,12 +957,8 @@ footer span {
   .cont hr {
     width: 1.5rem;
   }
-  .contact-container {
-    gap: 1.5rem;
-  }
-  .form-div form {
-    width: 100%;
-    gap: 1rem;
+  .contact-icons-div {
+    gap: 0;
   }
   .name-email {
     flex-direction: column;
@@ -784,5 +981,58 @@ footer span {
   /* footer */
   footer p {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1150px) {
+  .back-effect-div {
+    height: 500px;
+    width: 500px;
+    top: 70px;
+    right: 2rem;
+  }
+  #pro-pic {
+    height: 600px;
+  }
+  .name-div #name-text {
+    font-size: 65px;
+  }
+  .name-div #salutation-text {
+    font-size: 16px;
+  }
+  .name-div #role-text {
+    font-size: 16px;
+  }
+  .button-div button {
+    border-width: 1px;
+  }
+  .card {
+    border-width: 1px;
+    padding: 0px 20px;
+    height: 65px;
+    font-size: 28px;
+  }
+  .text-div {
+    font-size: 13px;
+  }
+  .projects-div {
+    top: 75vh;
+  }
+  .experience-div {
+    top: 70vh;
+    right: 24rem;
+  }
+
+  .skills-sec {
+    padding-top: 0vh;
+  }
+  .projects-section {
+    padding-top: 0vh;
+  }
+  .inputs {
+    border-width: 1px;
+  }
+  .contact-me {
+    height: 80vh;
   }
 }
