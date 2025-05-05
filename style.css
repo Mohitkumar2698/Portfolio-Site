@@ -168,7 +168,6 @@ body {
 .name-div {
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 1rem;
   font-weight: 600;
   font-size: 15px;
@@ -239,6 +238,8 @@ body {
   background: transparent;
   box-shadow: 5px 5px var(--light-mode-shadow);
   border-radius: 50px;
+}
+.button-div button:first-child {
 }
 .button-div button:hover {
   scale: 1.1;
@@ -615,7 +616,7 @@ footer span {
 }
 
 /* Ai  1200px*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   html {
     font-size: 1.3rem;
   }
@@ -663,9 +664,9 @@ footer span {
   .back-effect-div {
     height: 300px;
     width: 300px;
-    top: 50%;
+    top: 30vh;
     left: 50%;
-    transform: translate(-50%, -63%);
+    transform: translateX(-50%);
     align-self: center;
     /* display: none; */
   }
@@ -755,11 +756,11 @@ footer span {
     padding-top: 10vh;
     height: max-content;
     padding-bottom: 5vh;
-  } 
+  }
   .contact-container {
     flex-wrap: wrap;
   }
-  .contact-icons-div{
+  .contact-icons-div {
     gap: 2.7rem;
   }
   .contact-info-div b {
@@ -804,7 +805,7 @@ footer span {
   }
 }
 /* Ai  700px*/
-@media screen and (min-width: 501px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   html {
     font-size: 1.3rem;
   }
